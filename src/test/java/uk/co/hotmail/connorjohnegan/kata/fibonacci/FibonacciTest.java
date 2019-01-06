@@ -9,6 +9,14 @@ public class FibonacciTest {
     private Fibonacci fibonacci = new Fibonacci();
 
     @Test
+    // When I call calc(0) then 0 is returned
+    public void test0() {
+        int result = fibonacci.calc(0);
+
+        assertThat(result).isEqualTo(0);
+    }
+
+    @Test
     // When I call calc(1) then 1 is returned
     public void test1() {
         int result = fibonacci.calc(1);
@@ -31,4 +39,5 @@ public class FibonacciTest {
 
         assertThat(result).isEqualTo(2);
     }
+
 }
