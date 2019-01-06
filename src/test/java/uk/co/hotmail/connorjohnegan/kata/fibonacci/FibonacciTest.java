@@ -40,4 +40,11 @@ public class FibonacciTest {
         assertThat(result).isEqualTo(2);
     }
 
+    @Test
+    // When I call calc(10) then 55 is returned
+    public void test10() {
+        int result = fibonacci.calc(10);
+
+        assertThat(result).isEqualTo(55);
+    }
 }
