@@ -23,4 +23,12 @@ public class FibonacciTest {
 
         assertThat(result).isEqualTo(1);
     }
+
+    @Test
+    // When I call calc(3) then 1 is returned
+    public void test3() {
+        int result = fibonacci.calc(3);
+
+        assertThat(result).isEqualTo(2);
+    }
 }
